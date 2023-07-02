@@ -72,11 +72,13 @@ public class SnakeAndLadderGameGUI extends JFrame implements ActionListener {
             squarePanel.setPreferredSize(new Dimension(50, 50));
             JLabel squareLabel = new JLabel(Integer.toString(i));
             squarePanel.add(squareLabel);
+            //setting up the snakes in the board
             for (int j= 0; j< snakes.length; j++) {
             	if (i == snakes[j]) {
             		squarePanel.setBackground(Color.RED);
             	}
             }
+            //setting up the ladders in the board
             for (int k= 0; k< ladders.length; k++) {
             	if (i == ladders[k]) {
             		squarePanel.setBackground(Color.GREEN);
